@@ -51,7 +51,7 @@ header{
 }
 header>*{
    flex-grow: 1;
-   backdrop-filter: blur(10px) brightness(15%);
+   backdrop-filter: blur(10px) brightness(20%);
    display: flex;
    flex-flow: column wrap;
    justify-content: center;
