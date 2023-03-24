@@ -1,0 +1,100 @@
+body{
+   margin: 0;
+   padding: 0;
+   background: #000;
+   color: #aaa;
+   text-align: center;
+}
+.flex{
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   box-sizing: border-box;
+}
+.flex>*{
+   margin: 50px;
+   width: 150px;
+   height: 150px;
+   background: hsl(120,100%,5%);
+   box-shadow: 0 0 20px 2px hsl(120,100%,5%);
+   overflow: hidden;
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   border-radius: 50px;
+   transition: transform 0.5s;
+}
+.flex>div:hover{
+   transform: scale(150%) !important;
+}
+.flex>*>img{
+   transform: scale(150%);
+}
+.flex>*>video{
+   height: 100%;
+}
+.flex:nth-of-type(2)>* {
+   width: 200px;
+   height: 350px;
+}
+
+header{
+   background: url("data/img1.jpg") center;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: space-between;
+   height: 50vh;
+}
+header>*{
+   flex-grow: 1;
+   backdrop-filter: blur(10px) brightness(15%);
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+   box-sizing: border-box;
+   padding: 20px;
+   position: relative;
+}
+header>*>img{
+   width: 50vw;
+   height: 50vw;
+   border-radius: 50px;
+   margin: 20px;
+}
+
+img,video{
+   max-width: 100%;
+   max-height: 100%;
+}
+
+hr{
+   height: 0;
+   border: none;
+   border-top: 5px double hsl(120,100%,5%);
+}
+
+main{
+   border: 5px double hsl(120,100%,5%);
+   border-top: none;
+}
+footer{
+   background: hsl(120,100%,5%);
+   padding: 10px;
+   color: hsl(120,100%,30%);
+   font-family: monospace;
+   font-weight: 100;
+   letter-spacing: 10px;
+}
+h1{
+   color: hsl(120, 100%, 30%);
+   font-family: monospace;
+   font-weight: 100;
+   letter-spacing: 10px;
+   margin: 0;
+   line-height: 60px;
+}
