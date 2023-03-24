@@ -10,11 +10,11 @@ body{
    flex-flow: row wrap;
    justify-content: center;
    align-items: center;
-   padding: 20px;
+
    box-sizing: border-box;
 }
 .flex>*{
-   margin: 50px;
+   margin: 20px;
    width: 150px;
    height: 150px;
    background: hsl(120,100%,5%);
@@ -29,7 +29,7 @@ body{
    transition: transform 0.5s;
 }
 .flex>div:hover{
-   transform: scale(150%) !important;
+   transform: scale(140%) !important;
 }
 .flex>*>img{
    transform: scale(150%);
